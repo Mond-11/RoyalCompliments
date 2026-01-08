@@ -1,8 +1,11 @@
 package com.example.backend;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.Random;
 
@@ -10,31 +13,23 @@ import java.util.Random;
 @CrossOrigin(origins = "*")
 public class ComplimentController {
 
-    private final List<String> compliments = List.of(
-        "Verily, thou art more pleasant than a warm hearth in winter.",
-        "Thy wit is sharper than a fresh-forged sword!",
-        "I would gladly share my last wheel of cheese with thee.",
-        "Thou lookest dashing enough to marry into royalty immediately.",
-        "Hark! Thy presence is more welcome than ale after the harvest.",
-        "Thy charm could convince a dragon to give up its hoard.",
-        "Thou hast a spirit wilder than a boar in the forest.",
-        "Even the court jesters take notes when thou speakest.",
-        "Thou art the finest creature to ever walk upon cobblestone.",
-        "Forsooth, thou shinest brighter than a polished shield."
-    );
-
-    private int lastIndex = -1;
-    private final Random random = new Random();
+    @Autowired
+    private ComplimentRepository repository;
 
     @GetMapping("/api/compliment")
     public String getCompliment() {
-        int newIndex;
+    List<Compliment> all = repository.findAll();
 
-        do {
-            newIndex = random.nextInt(compliments.size());
-        } while (newIndex == lastIndex);
+        if (all.isEmpty()) {
+        return "The scrolls are empty! Add a compliment below.";
+        }
 
-        lastIndex = newIndex;
-        return compliments.get(newIndex);
+        return all.get(new Random().nextInt(all.size())).getText();
+    }
+
+    @PostMapping("/api/compliment")
+    public Compliment addCompliment(@RequestBody String text) {
+        String cleanText = text.replaceAll("^\"|\"$", "");
+        return repository.save(new Compliment(cleanText));
     }
 }

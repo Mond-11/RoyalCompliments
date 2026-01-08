@@ -39,3 +39,4 @@ out/
 backend/build/
 backend/out/
 backend/.gradle/
+/server.log
