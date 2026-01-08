@@ -61,3 +61,8 @@ addBtn.addEventListener('click', async () => {
         addBtn.innerText = "Add to Archives";
     }
 });
+/*
+window.addEventListener('DOMContentLoaded', () => {
+    button.click();
+});
+*/

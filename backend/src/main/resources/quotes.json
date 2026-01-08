@@ -1,42 +1,66 @@
 [
-  {
-    "text": "The die is cast.",
-    "author": "Julius Caesar"
-  },
-  {
-    "text": "I am the state.",
-    "author": "Louis XIV"
-  },
-  {
-    "text": "To defeat the enemy, you must become the enemy.",
-    "author": "Sun Tzu"
-  },
-  {
-    "text": "God is not on the side of the big battalions, but on the side of the best shots.",
-    "author": "Voltaire"
-  },
-  {
-    "text": "A prince must be a fox to know the traps and a lion to frighten the wolves.",
-    "author": "Niccolò Machiavelli"
-  },
-  {
-    "text": "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.",
-    "author": "Sun Tzu"
-  },
-  {
-    "text": "It is better to be feared than loved, if you cannot be both.",
-    "author": "Niccolò Machiavelli"
-  },
-  {
-    "text": "History is a set of lies agreed upon.",
-    "author": "Napoleon Bonaparte"
-  },
-  {
-    "text": "An army marches on its stomach.",
-    "author": "Napoleon Bonaparte"
-  },
-  {
-    "text": "There is no place for the weak in this world.",
-    "author": "Otto von Bismarck"
-  }
+  { "text": "It is better to be feared than loved, if you cannot be both.", "author": "Niccolò Machiavelli" },
+  { "text": "Men sooner forget the death of their father than the loss of their patrimony.", "author": "Niccolò Machiavelli" },
+  { "text": "A prince who is not wise himself cannot be well advised.", "author": "Niccolò Machiavelli" },
+  { "text": "The first method for estimating the intelligence of a ruler is to look at the men he has around him.", "author": "Niccolò Machiavelli" },
+  { "text": "Whoever desires constant success must change his conduct with the times.", "author": "Niccolò Machiavelli" },
+
+  { "text": "All warfare is based on deception.", "author": "Sun Tzu" },
+  { "text": "The supreme art of war is to subdue the enemy without fighting.", "author": "Sun Tzu" },
+  { "text": "If you know the enemy and know yourself, you need not fear the result of a hundred battles.", "author": "Sun Tzu" },
+
+  { "text": "If you want peace, prepare for war.", "author": "Vegetius" },
+  { "text": "Fortune favors the bold.", "author": "Virgil" },
+
+  { "text": "Man is born free, and everywhere he is in chains.", "author": "Jean-Jacques Rousseau" },
+  { "text": "The strongest is never strong enough to be always the master, unless he transforms strength into right.", "author": "Jean-Jacques Rousseau" },
+
+  { "text": "Wherever law ends, tyranny begins.", "author": "John Locke" },
+  { "text": "The end of law is not to abolish or restrain, but to preserve and enlarge freedom.", "author": "John Locke" },
+
+  { "text": "Useless laws weaken the necessary laws.", "author": "Montesquieu" },
+  { "text": "Political liberty is found only in moderate governments.", "author": "Montesquieu" },
+
+  { "text": "He who defends everything, defends nothing.", "author": "Frederick the Great" },
+  { "text": "Diplomacy without arms is like music without instruments.", "author": "Frederick the Great" },
+
+  { "text": "An army marches on its stomach.", "author": "Napoleon Bonaparte" },
+  { "text": "In war, the moral is to the physical as three is to one.", "author": "Napoleon Bonaparte" },
+  { "text": "Never interrupt your enemy when he is making a mistake.", "author": "Napoleon Bonaparte" },
+  { "text": "A soldier will fight long and hard for a bit of colored ribbon.", "author": "Napoleon Bonaparte" },
+  { "text": "History is a set of lies agreed upon.", "author": "Napoleon Bonaparte" },
+
+  { "text": "War is merely the continuation of policy by other means.", "author": "Carl von Clausewitz" },
+
+  { "text": "Taxation without representation is tyranny.", "author": "James Otis" },
+
+  { "text": "A standing army is one of the greatest mischiefs that can possibly happen.", "author": "James Madison" },
+  { "text": "Liberty may be endangered by the abuses of liberty as well as by the abuses of power.", "author": "James Madison" },
+
+  { "text": "Safety from external danger is the most powerful director of national conduct.", "author": "Alexander Hamilton" },
+
+  { "text": "The people never give up their liberties but under some delusion.", "author": "Edmund Burke" },
+  { "text": "Bad laws are the worst sort of tyranny.", "author": "Edmund Burke" },
+
+  { "text": "The pen is mightier than the sword.", "author": "Edward Bulwer-Lytton" },
+
+  { "text": "Give me liberty, or give me death!", "author": "Patrick Henry" },
+
+  { "text": "Government is not reason; it is force.", "author": "George Washington" },
+  { "text": "To be prepared for war is one of the most effective means of preserving peace.", "author": "George Washington" },
+
+  { "text": "The natural progress of things is for liberty to yield and government to gain ground.", "author": "Thomas Jefferson" },
+  { "text": "Every government degenerates when trusted to the rulers alone.", "author": "Thomas Jefferson" },
+
+  { "text": "Terror is nothing other than justice: prompt, severe, and inflexible.", "author": "Maximilien Robespierre" },
+  { "text": "Crime butchers innocence to secure a throne.", "author": "Maximilien Robespierre" },
+
+  { "text": "Those who would give up essential Liberty, to purchase a little temporary Safety, deserve neither.", "author": "Benjamin Franklin" },
+
+  { "text": "Sovereignty is the absolute and perpetual power of a commonwealth.", "author": "Jean Bodin" },
+
+  { "text": "Power always thinks it has a great soul.", "author": "John Adams" },
+  { "text": "Facts are stubborn things.", "author": "John Adams" },
+
+  { "text": "I speak Spanish to God, Italian to women, French to men, and German to my horse.", "author": "Charles V, Holy Roman Emperor" }
 ]
