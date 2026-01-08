@@ -1,4 +1,95 @@
-.medieval-font {
-    font-family: 'Georgia', serif;
+body {
+    background-color: #121212;
+    font-family: 'Lato', sans-serif;
+    color: #b0b0b0;
+}
+
+.archive-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+}
+
+.quote-text {
+    font-family: 'Cinzel', serif;
+    color: #e0e0e0;
+    font-weight: 700;
+    font-size: 1.8rem;
+    min-height: 80px;
+}
+
+.author-text {
     font-style: italic;
+    color: #888;
+    font-size: 1.1rem;
+}
+
+.badge-neutral {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #666;
+    border: 1px solid #333;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background: #181818;
+    text-transform: uppercase;
+}
+
+.input-dark {
+    background-color: #121212 !important;
+    border: 1px solid #333 !important;
+    color: #ddd !important;
+}
+
+.input-dark::placeholder {
+    color: #555;
+}
+
+.input-dark:focus {
+    border-color: #555 !important;
+    box-shadow: none !important;
+}
+
+.btn-neutral-main {
+    background-color: #2c2c2c;
+    color: #ddd;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+.btn-neutral-main:hover {
+    background-color: #3e3e3e;
+    color: #ffffff;
+    border-color: #666;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn-neutral-accent {
+    background-color: #1a1a1a;
+    color: #888;
+    border: 1px solid #333;
+}
+
+.btn-neutral-accent:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.divider {
+    border-color: #333;
+    opacity: 0.5;
+}
+
+.text-muted {
+    color: #808080 !important;
+}
+
+.card-footer .text-muted:hover {
+    color: #a0a0a0 !important;
+    transition: color 0.3s ease;
 }

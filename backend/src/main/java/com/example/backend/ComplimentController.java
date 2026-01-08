@@ -16,14 +16,25 @@ public class ComplimentController {
     private ComplimentRepository repository;
 
     @GetMapping("/api/compliment")
-    public Compliment getCompliment() {
-        List<Compliment> all = repository.findAll();
+    public Compliment getCompliment(@RequestParam(required = false) String excludeId) {
+            List<Compliment> all = repository.findAll();
 
         if (all.isEmpty()) {
             return new Compliment("The archives are empty!", "System");
         }
 
-        return all.get(new Random().nextInt(all.size()));
+        if (all.size() == 1) {
+            return all.get(0);
+        }
+
+        Random random = new Random();
+        Compliment selected;
+
+        do {
+            selected = all.get(random.nextInt(all.size()));
+        } while (excludeId != null && selected.getId().equals(excludeId));
+
+        return selected;
     }
 
     @PostMapping("/api/compliment")

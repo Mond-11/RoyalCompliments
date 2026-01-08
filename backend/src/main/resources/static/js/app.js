@@ -5,25 +5,40 @@ const authorDiv = document.getElementById('author');
 const addBtn = document.getElementById('addBtn');
 const inputField = document.getElementById('newText');
 
-button.addEventListener('click', async () => {
-    try {
-        button.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Consulting...';
-        button.disabled = true;
+let currentId = null;
 
-        const response = await fetch('/api/compliment');
-        const data = await response.json();
+if (button) {
+    button.addEventListener('click', async () => {
+        try {
+            button.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Consulting...';
+            button.disabled = true;
 
-        messageDiv.innerText = `"${data.text}"`;
-        authorDiv.innerText = `- ${data.author}`;
+            let url = '/api/compliment';
+            if (currentId) {
+                url += `?excludeId=${currentId}`;
+            }
 
-    } catch (error) {
-        messageDiv.innerText = "The library is on fire.";
-        authorDiv.innerText = "";
-    } finally {
-        button.innerText = 'Consult Again';
-        button.disabled = false;
-    }
-});
+            const response = await fetch(url);
+
+            if (!response.ok) throw new Error("Network response was not ok");
+
+            const data = await response.json();
+
+            currentId = data.id;
+
+            messageDiv.innerText = `"${data.text}"`;
+            authorDiv.innerText = `- ${data.author}`;
+
+        } catch (error) {
+            console.error(error);
+            messageDiv.innerText = "The archives are silent.";
+            authorDiv.innerText = "";
+        } finally {
+            button.innerText = 'Consult the Archives';
+            button.disabled = false;
+        }
+    });
+}
 
 addBtn.addEventListener('click', async () => {
     const textVal = inputField.value;
@@ -61,8 +76,3 @@ addBtn.addEventListener('click', async () => {
         addBtn.innerText = "Add to Archives";
     }
 });
-/*
-window.addEventListener('DOMContentLoaded', () => {
-    button.click();
-});
-*/
